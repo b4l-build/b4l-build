@@ -23,7 +23,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Install build deps
-        run: pip install nuitka numpy pandas psutil cryptography certifi
+        run: pip install nuitka numpy pandas psutil cryptography certifi zstandard
       - name: Build (Nuitka onefile)
         working-directory: engine
         run: python compute/build_node.py
